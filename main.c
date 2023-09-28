@@ -2,6 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    ft_is_negative(126546);
+    ft_print_comb();
     return 0;
 }
