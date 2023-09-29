@@ -1,3 +1,4 @@
+
 #include "lib.h"
 
 void ft_is_negative(int n)
