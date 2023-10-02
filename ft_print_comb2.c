@@ -7,9 +7,11 @@ void print_numbers (char a, char b)
             ft_putchar(' ');
             ft_putchar(b / 10 + 48);
             ft_putchar(b % 10 + 48);
-            if(!(a ))
-            ft_putchar(',');
-            ft_putchar(' ');
+            if(!(a == 98 && b == 99))
+            {
+                ft_putchar(',');
+                ft_putchar(' ');
+            }
 }
 void ft_print_comb2(void)
 {

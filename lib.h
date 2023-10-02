@@ -10,6 +10,7 @@ void ft_is_negative(int n);
 void ft_putchar(char c);
 void ft_print_alphabet(void);
 void ft_print_comb2(void);
+void ft_putnbr(int nb);
 
 #endif 
 

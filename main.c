@@ -2,6 +2,6 @@
 
 int main(int argc, char *argv[])
 {
-    ft_print_comb2();
+    ft_putnbr(2147483648);
     return 0;
 }
