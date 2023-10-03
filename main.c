@@ -2,15 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-int a;
-int b;
-b = 2;
-a = 25;
-
-ft_ultimate_div_mod(&a, &b);
-ft_putnbr(a);
-ft_putchar('\n');
-ft_putnbr(b);
-
+    char *str;
+    str = "manger";
+    ft_putstr(str);
     return 0;
 }
