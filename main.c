@@ -2,18 +2,17 @@
 
 int main(int argc, char *argv[])
 {
-    int a;
-    int b;
+int a;
+int b;
+int div;
+int mod;
+b = 2;
+a = 25;
 
-    a = 1;
-    b = 2;
-    ft_putnbr(a);
-    ft_putchar('\n');
-    ft_putnbr(b);
-    ft_swap(&a,&b);
-    ft_putchar('\n');
-    ft_putnbr(a);
-    ft_putchar('\n');
-    ft_putnbr(b);
+ft_div_mod(a, b, &div, &mod);
+ft_putnbr(div);
+ft_putchar('\n');
+ft_putnbr(mod);
+
     return 0;
 }
