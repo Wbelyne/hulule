@@ -11,7 +11,10 @@ void ft_putchar(char c);
 void ft_print_alphabet(void);
 void ft_print_comb2(void);
 void ft_putnbr(int nb);
-
+void ft_ft(int *nbr);
+void ft_ultimate_ft(int *********nbr);
+void ft_swap(int *a,int *b);
+void ft_div_mod(int a, int b, int *div, int *mod);
 #endif 
 
 
