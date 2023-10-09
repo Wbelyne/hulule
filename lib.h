@@ -21,6 +21,7 @@ int ft_strlen(char *str);
 void ft_rev_int_tab(int *tab, int size);
 void ft_sort_int_tab(int *tab, int size);
 char *ft_strcpy(char *dest, char *src);
+char *ft_strncpy(char *dest, char *src, unsigned int n);
 #endif 
 
 
