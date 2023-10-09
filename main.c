@@ -1,4 +1,5 @@
 #include "lib.h"
+#include "string.h"
 
 int main(int argc, char *argv[])
 {
@@ -8,4 +9,5 @@ int main(int argc, char *argv[])
 	char dest1[] = "";
 	char src1[] = "";
 	ft_strcpy(dest1, src1);
+	ft_strcpy(NULL, NULL);
 }
