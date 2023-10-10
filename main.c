@@ -3,12 +3,19 @@
 
 int main(int argc, char *argv[])
 {
-printf("%s\n%s\n%s\n%s\n%s\n%s\n%s\n",
-			ft_str_is_uppercase("")?"OK":"Fail",
-			ft_str_is_uppercase("ABCDEFGHIJKLMNOPQRSTUVWXZ")?"OK":"Fail",
-			!ft_str_is_uppercase("ABCDEFGHIJKLMNOPQRSTUVWXZabcdefghijklmnopqrstuvwxyz")?"OK":"Fail",
-			!ft_str_is_uppercase("0123456789")?"OK":"Fail",
-			!ft_str_is_uppercase(" ")?"OK":"Fail",
-			!ft_str_is_uppercase("\\")?"OK":"Fail",
-			!ft_str_is_uppercase("\n")?"OK":"Fail");
+
+	char	c;
+
+	c = 1;
+	while (c != 0)
+	{
+		if ((c < ' ' || c > '~') == ft_str_is_printable(&c))
+		{
+			printf("Fail for char in decimal: %d\n", (int)c);
+			return (0);
+		}
+		c++;
+	}
+
+	printf("Success\n");
 }
