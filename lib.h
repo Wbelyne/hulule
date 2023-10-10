@@ -22,6 +22,7 @@ void ft_rev_int_tab(int *tab, int size);
 void ft_sort_int_tab(int *tab, int size);
 char *ft_strcpy(char *dest, char *src);
 char *ft_strncpy(char *dest, char *src, unsigned int n);
+int ft_str_is_alpha(char *str);
 #endif 
 
 

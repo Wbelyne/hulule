@@ -3,19 +3,11 @@
 
 int main(int argc, char *argv[])
 {
-int i;
-	char dest[] = "Epic fail !!!!!";
-	char src[] = "Success";
-	printf("%s\n%s\n%s\n", src, ft_strncpy(dest, src, 15), dest);
-	i = 9;
-	while (i < 15)
-	{
-		if (dest[i] != '\0')
-		{
-			printf("FAIL! Remainder of dst must be filled with `\\0' characters, got %c (\\%x) at pos %d\n", dest[i], dest[i], i);
-			return (1);
-		}
-		i++;
-	}
-	return (0);
+ printf("%s\n%s\n%s\n%s\n%s\n%s\n",
+			ft_str_is_alpha("")?"OK":"Fail",
+			ft_str_is_alpha("ABCDEFGHIJKLMNOPQRSTUVWXZabcdefghijklmnopqrstuvwxyz")?"OK":"Fail",
+			!ft_str_is_alpha("1")?"OK":"Fail",
+			!ft_str_is_alpha(" ")?"OK":"Fail",
+			!ft_str_is_alpha("\\")?"OK":"Fail",
+			!ft_str_is_alpha("\n")?"OK":"Fail");
 }
