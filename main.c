@@ -1,21 +1,12 @@
 #include "lib.h"
 #include "string.h"
 
-int main(int argc, char *argv[])
+
+int		main()
 {
-
-	char	c;
-
-	c = 1;
-	while (c != 0)
-	{
-		if ((c < ' ' || c > '~') == ft_str_is_printable(&c))
-		{
-			printf("Fail for char in decimal: %d\n", (int)c);
-			return (0);
-		}
-		c++;
-	}
-
-	printf("Success\n");
+	char c[] = "AbCdEfG-Yz";
+	ft_putstr("ABCDEFG-YZ:");
+	ft_putstr(ft_strupcase(c));
+	ft_putstr(":");
+	ft_putstr(c);
 }
