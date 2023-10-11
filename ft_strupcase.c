@@ -2,11 +2,11 @@
 
 char *ft_strupcase(char *str)
 {
-    int i;
-    i = 0;
-    while (str[i])
+    while (*str)
     {
-        /* code */
+        if (*str >= 'a' && *str <= 'z')
+            *str -= 32;
+        str++;
     }
-    
+    return (str);
 }
