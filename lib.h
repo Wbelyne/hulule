@@ -31,6 +31,7 @@ int ft_str_is_uppercase(char *str);
 char *ft_strupcase(char *str);
 char *ft_strlowcase(char *str);
 unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
+char *ft_strcapitalize(char *str);
 #endif 
 
 
