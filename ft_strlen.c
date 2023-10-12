@@ -2,10 +2,10 @@
 
 int ft_strlen(char *str)
 {
-    int len;
-    len = 0;
+    int i;
 
-    while (*str++ != 0)
-        len++;
-    ft_putnbr(len);
+	i = 0;
+	while (str[i] != '\0')
+		i++;
+	return (i);
 }

@@ -1,12 +1,12 @@
 #include "lib.h"
-#include "string.h"
 
-
-int		main()
+int	main(void)
 {
-	char c[] = "AbCdEfG-Yz";
-	ft_putstr("ABCDEFG-YZ:");
-	ft_putstr(ft_strlowcase(c));
-	ft_putstr(":");
-	ft_putstr(c);
+	int size = 100;
+	char dest[] = "salut les gens ezifdhzeofhoàezhfoezhfoiuez";
+	char src[] = "je suis la fonction strlcpy";
+	printf("%s\n", dest);
+	ft_strlcpy(dest, src, size);
+	printf("%s\n", dest);
+	return (0);
 }

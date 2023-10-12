@@ -4,6 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
+#include <string.h>
+#include <bsd/string.h>
 
 void ft_print_comb(void);
 void ft_is_negative(int n);
@@ -28,6 +30,7 @@ int ft_str_is_lowercase(char *str);
 int ft_str_is_uppercase(char *str);
 char *ft_strupcase(char *str);
 char *ft_strlowcase(char *str);
+unsigned int ft_strlcpy(char *dest, char *src, unsigned int size);
 #endif 
 
 
