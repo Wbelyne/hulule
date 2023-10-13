@@ -2,8 +2,8 @@
 
 int	main(void)
 {
-	char cap[] = "salut, comment tu vas ? 42mots quarante-deux; cinquante+et+un";
-	ft_strcapitalize(cap);
-	ft_putstr(cap);
+	char cap[] = "Coucou\ntu vas bien ?";
+	ft_putstr_non_printable(cap);
+	return 0;
 
 }
