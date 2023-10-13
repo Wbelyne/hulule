@@ -4,7 +4,7 @@ void	ft_puthex(char n)
 	char			*base;
 	unsigned char	c;
 
-	c = (unsigned char)n;
+	c = n;
 	base = "0123456789abcdef";
 	ft_putchar('\\');
 	ft_putchar(base[c / 16]);
