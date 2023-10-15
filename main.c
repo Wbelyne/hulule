@@ -8,9 +8,15 @@ int	main(void)
 	char s4[] = "Size";
 	char s5[] = "Shorter";
 	char s6[] = "ThanMyself";
+	char s7[] = "ShorterTest";
 
-	printf("%d, %d\n", ft_strcmp(s1, s2), strcmp(s1, s2));
-	printf("%d, %d\n", ft_strcmp(s3, s4), strcmp(s3, s4));
-	printf("%d, %d\n", ft_strcmp(s5, s6), strcmp(s5, s6));
-	printf("%d, %d\n", ft_strcmp(s5, s5), strcmp(s5, s5));
+	printf("%d, %d\n", ft_strncmp(s1, s2, 4), strncmp(s1, s2, 4));
+	printf("%d, %d\n", ft_strncmp(s1, s2, 2), strncmp(s1, s2, 2));
+	printf("%d, %d\n", ft_strncmp(s3, s4, 4), strncmp(s3, s4, 4));
+	printf("%d, %d\n", ft_strncmp(s3, s4, 1), strncmp(s3, s4, 1));
+	printf("%d, %d\n", ft_strncmp(s5, s6, 3), strncmp(s5, s6, 3));
+	printf("%d, %d\n", ft_strncmp(s5, s5, 10), strncmp(s5, s5, 10));
+	printf("%d, %d\n", ft_strncmp(s5, s5, 5), strncmp(s5, s5, 5));
+	printf("%d, %d\n", ft_strncmp(s5, s7, 7), strncmp(s5, s7, 7));
+	printf("%d, %d\n", ft_strncmp(s5, s7, 8), strncmp(s5, s7, 8));
 }
