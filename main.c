@@ -2,21 +2,23 @@
 
 int	main(void)
 {
-	char s1[] = "Test1";
-	char s2[] = "OK";
-	char s3[] = "Same";
-	char s4[] = "Size";
-	char s5[] = "Shorter";
-	char s6[] = "ThanMyself";
-	char s7[] = "ShorterTest";
+	char s1a[10] = "Test1";
+	char s2a[] = "OK";
+	char s1b[10] = "Test1";
+	char s2b[] = "OK";
+	char s3a[10] = "Same";
+	char s4a[] = "Size";
+	char s3b[10] = "Same";
+	char s4b[] = "Size";
+	char s5a[20] = "Shorter";
+	char s6a[] = "ThanMyself";
+	char s5b[20] = "Shorter";
+	char s6b[] = "ThanMyself";
 
-	printf("%d, %d\n", ft_strncmp(s1, s2, 4), strncmp(s1, s2, 4));
-	printf("%d, %d\n", ft_strncmp(s1, s2, 2), strncmp(s1, s2, 2));
-	printf("%d, %d\n", ft_strncmp(s3, s4, 4), strncmp(s3, s4, 4));
-	printf("%d, %d\n", ft_strncmp(s3, s4, 1), strncmp(s3, s4, 1));
-	printf("%d, %d\n", ft_strncmp(s5, s6, 3), strncmp(s5, s6, 3));
-	printf("%d, %d\n", ft_strncmp(s5, s5, 10), strncmp(s5, s5, 10));
-	printf("%d, %d\n", ft_strncmp(s5, s5, 5), strncmp(s5, s5, 5));
-	printf("%d, %d\n", ft_strncmp(s5, s7, 7), strncmp(s5, s7, 7));
-	printf("%d, %d\n", ft_strncmp(s5, s7, 8), strncmp(s5, s7, 8));
+	printf("%s:%s\n", ft_strcat(s1a, s2a), strcat(s1b, s2b));
+	printf("%s\n", strcmp(s1a, s1b) == 0 && strcmp(s2a, s2b) == 0 ? "Success" : "Fail");
+	printf("%s:%s\n", ft_strcat(s3a, s4a), strcat(s3b, s4b));
+	printf("%s\n", strcmp(s3a, s3b) == 0 && strcmp(s4a, s4b) == 0 ? "Success" : "Fail");
+	printf("%s:%s\n", ft_strcat(s5a, s6a), strcat(s5b, s6b));
+	printf("%s\n", strcmp(s5a, s5b) == 0 && strcmp(s6a, s6b) == 0 ? "Success" : "Fail");
 }
