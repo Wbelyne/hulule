@@ -40,6 +40,7 @@ char *ft_strcat(char *dest, char *src);
 char *ft_strncat(char *dest, char *src, unsigned int nb);
 char *ft_strstr(char *str, char *to_find);
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
+int ft_atoi(char *str);
 #endif 
 
 
