@@ -2,5 +2,8 @@
 
 int	main(void)
 {
-	ft_atoi("efze125");
+	ft_putnbr(ft_atoi("-"));
+	ft_putchar('\n');
+	ft_putnbr(atoi("-"));
+
 }
