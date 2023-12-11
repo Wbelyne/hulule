@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
-#include <bsd/string.h>
 
 void ft_print_comb(void);
 void ft_is_negative(int n);
@@ -41,6 +40,7 @@ char *ft_strncat(char *dest, char *src, unsigned int nb);
 char *ft_strstr(char *str, char *to_find);
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
 int ft_atoi(char *str);
+int ft_iterative_factorial(int nb);
 #endif 
 
 
