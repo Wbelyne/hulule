@@ -41,6 +41,7 @@ char *ft_strstr(char *str, char *to_find);
 unsigned int ft_strlcat(char *dest, char *src, unsigned int size);
 int ft_atoi(char *str);
 int ft_iterative_factorial(int nb);
+int ft_recursive_factorial(int nb);
 #endif 
 
 
