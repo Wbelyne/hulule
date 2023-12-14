@@ -2,24 +2,15 @@
 
 int ft_iterative_power(int nb, int power)
 {
-    int baisse = 1;
-    if (nb && power == 0)
+    int baisse = 0;
+    int res = 1;
+    if (power < 0)
+		return (0);
+
+    if (nb == 0 && power == 0)
         return 1;
     
-    while(baisse != power)
-    {
-        nb *= nb;
-        baisse++;
-    }
-    return(nb);
-}
-
-int main(int argc, char const *argv[])
-{
-    printf("0:%d\n", ft_iterative_power(1, -10));
-	printf("0:%d\n", ft_iterative_power(1, -1));
-	printf("1:%d\n", ft_iterative_power(10, 0));
-	printf("10:%d\n", ft_iterative_power(10, 1));
-	printf("100:%d\n", ft_iterative_power(10, 2));
-	printf("216:%d\n", ft_iterative_power(6, 3));
+    while(baisse++ < power)
+        res *= nb;
+    return(res);
 }
